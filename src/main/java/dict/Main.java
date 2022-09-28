@@ -106,6 +106,8 @@ public class Main {
             System.out.println("The file output.html has been succesfully edited");
             System.out.println("---------------------------------------------");
         }
+        System.out.println("The file output.html has been succesfully edited");
+        System.out.println("---------------------------------------------");
     }
     
     //This method loads data from as many files 
@@ -114,7 +116,7 @@ public class Main {
         int i = 0;
         while(i < num_files) {
             try {
-                String a = (i+1) + ".txt";
+                String a = "files/" + (i+1) + ".txt";
                 File myObj = new File(a);
                 Scanner myReader = new Scanner(myObj);
                 while (myReader.hasNextLine()) {
